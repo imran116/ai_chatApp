@@ -1,1 +1,1 @@
-web : gunicorn ai_task.wsgi
+web: gunicorn ai_task.wsgi
