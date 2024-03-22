@@ -21,7 +21,7 @@ def register_view(request):
         form = CreateUser(data=request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')
+            return redirect('login')
 
     return render(request, 'authentication/signup.html', context={'form': form})
 
